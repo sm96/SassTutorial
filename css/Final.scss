@@ -4,17 +4,13 @@
 $font-stack: Oswald, Helvetica;
 $primary-color: darkslateblue;
 
-
-
 h1 {
-  //border-color: $blue;
   color: $primary-color;
   font-family: $font-stack;
 }
 
 h2{
   @extend h1
-
 }
 
 body {
