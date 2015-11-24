@@ -3,14 +3,16 @@
 
 @import url(https://fonts.googleapis.com/css?family=Oswald);
 
+$font-stack: Oswald, Helvetica;
+$primary-color: darkslateblue;
+
 h1 {
-  color: darkslateblue;
-  font-family: Oswald, Helvetica;
+  color: $primary-color;
+  font-family: $font-stack;
 }
 
 h2{
-  color: darkslateblue;
-  font-family: Oswald, Helvetica;
+  @extend h1
 }
 
 body {
@@ -30,22 +32,22 @@ body {
 nav{
   background-color: white;
   margin: 0;
-}
 
-nav  li{
+  li{
   display: inline;
 }
-
-nav a{
+a{
   color: yellowgreen;
   text-decoration: none;
   font-size: 20px;
   padding: 0.5em;
+ }
 }
+
 
 .article{
   float: left;
-  width: 100%;
+  width: 600px / 960px * 100%;
 }
 
 img{
